@@ -17,3 +17,6 @@ public class InventoryController {
         return inventoryService.isInStock(skuCode, quantity);
     }
 }
+
+//RequestParam is used to extract query parameters from the URL. in this case skuCode and quantity are the query parameters.
+//As an example, if you call the endpoint with the URL http://localhost:8080/api/inventory?skuCode=ABC123&quantity=10
