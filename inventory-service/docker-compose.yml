@@ -9,5 +9,5 @@ services:
       MYSQL_ROOT_PASSWORD: mysql
       MYSQL_DATABASE: inventory_service
     volumes:
-#      - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
       - ./docker/mysql/data:/var/lib/mysql

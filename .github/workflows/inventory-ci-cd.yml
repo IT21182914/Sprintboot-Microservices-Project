@@ -26,7 +26,7 @@ jobs:
           sleep 25
 
       - name: Build with Maven
-        run: mvn clean package -DskipTests=true
+        run: mvn clean package -DskipTests=false
         working-directory: inventory-service
 
       - name: Login to DockerHub
